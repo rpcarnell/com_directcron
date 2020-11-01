@@ -1,0 +1,229 @@
+#editfield
+{
+    display: none;
+    background: #bbb;
+    padding:1px;
+    border: 5px solid #bbb;
+    float: left;
+    height: 500px;
+    width: 600px;
+    font-size: 1.2em;
+    position: fixed;
+    top: 55%; left: 15%;
+    z-index: 99999;
+    /*--CSS3 Box Shadows--*/
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+    /*--CSS3 Rounded Corners--*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#editfieldcontent
+{
+    background: #fff; 
+    padding: 5px;
+}
+.icon-48-dircronsettings
+{
+    background: url(../icons/configuration.gif);
+}
+.icon-48-dircronlayout
+{
+    background: url(../icons/template.gif);
+}
+.icon-48-dircroncategory
+{
+    background: url(../icons/category.gif);
+}
+
+.adminformlist
+{
+    background: #fff;
+    padding: 3px;
+}
+.paramLabel label
+{
+    background: #eee;
+    margin: 3px;
+    width: 240px;
+}
+.panelform
+{
+    
+}
+#accordion div
+{
+  
+    
+}
+#accordion input
+{
+     width: 200px;    
+}
+.adminlist
+{
+   
+}
+span.settingsLabel
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+span.settingsDesc
+{
+    font-size: 12px;
+    color: #444; 
+}
+.paramlist_label
+{
+    
+     background: #ddd;
+    padding: 5px;
+}
+.paramlist_value
+{
+   background: #fff;
+    padding: 5px;
+}
+
+.adminlist tr.native
+{
+    background: #fdd !important;
+}
+.nonnative
+{
+    background: #fdd;
+    padding: 45px;
+}
+.warning
+{
+    color: #a00;
+    margin: 5px;
+}
+#dircron_success
+{
+    padding: 5px;
+    margin: 5px;
+    background: #cfc;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+#dircron_fail
+{
+    padding: 5px;
+    margin: 5px;
+    background: #fcc;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+span.settingsLabel
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+span.settingsDesc
+{
+    font-size: 12px;
+    color: #444; 
+}
+
+.paramlist_label
+{
+    
+     background: #eee;
+   
+    border: 1px solid #ddd;
+}
+.paramlist_value
+{
+   background: #fff;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.adminlist tr.native
+{
+    background: #ddd !important;
+}
+.nonnative
+{
+    background: #ddd;
+    padding: 45px;
+}
+.warning
+{
+    color: #a00;
+    margin: 5px;
+}
+#dircron_success
+{
+    padding: 5px;
+    margin: 5px;
+    background: #cfc;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+#dircron_fail
+{
+    padding: 5px;
+    margin: 5px;
+    background: #fcc;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+#sidebar
+{
+    background: #def;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    
+    margin-top: 10px;
+}
+
+div.icon {
+    text-align: center;
+    margin-right: 15px;
+    float: left;
+    margin-bottom: 15px;
+}
+table.adminlist tr
+{
+    background: #eee;
+    padding: 3px;
+   
+}
+table.adminlist tr td {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+     
+}
+
+.nav-tabs
+{
+    display: block !important;
+}
+
+
+/*
+<ul class="nav nav-tabs" id="ID-Tabs-GroupTabs"></ul>
+*/

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?><!-- $Id: config.xml 3576 2012-05-01 14:11:04Z geraintedwards $ -->
+<config>
+
+ 
+	
+        <fieldset  name="RECAPTCHA_SETTINGS">
+  	 <field name="pubkey" type="text" default="" size="50" label="ARG_PUBLIC_KEY" description="ARG_REGISTER_AT_RECAPTCHA" />
+ 	    <field name="privkey" type="text" default="" size="50" label="ARG_PRIVATE_KEY" description="ARG_REGISTER_AT_RECAPTCHA" />
+			<field name="themerecaptcha" type="list" default="red" label="ARG_THEME" description="ARG_CHOOSE_YOUR_COLOR_OF_THEME">
+				<option value="red">Red</option>
+				<option value="white">White</option>
+				<option value="blackglass">Blackglass</option>
+				<option value="clean">Clean</option>				
+			</field> 	 
+ </fieldset>
+        
+	<fieldset  name="DIRCRON_CACHE" addfieldpath="/administrator/components/com_directcron/fields/">
+		 <field name="com_cache" type="dircboolean" default="0" menu="hide" label="DIRCRON_CACHE_USE" description="" />
+	        <field name="com_cachelast" type="list" default="12" label="DIRCRON_CACHE_LAST" description="DIRCRON_CACHE_LABEL_DESC">
+			<option value="12">DIRCRON_12HOURS</option>
+			<option value="24">DIRCRON_24HOURS</option>
+			<option value="48">DIRCRON_48HOURS</option>
+			<option value="72">DIRCRON_72HOURS</option>
+		</field>
+		<field name="com_cache_debug" type="radio" default="0" menu="hide" label="DIRCRON_USE_CACHE_DEBUG" description="">
+                    <option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+			 
+                </field>
+	</fieldset>
+	
+ 
+         <fieldset name="DIRCRON_TAB_RSS" addfieldpath="/administrator/components/com_directcron/fields/">
+		<field name="@spacer_rss1" type="dircinfo" default="DIRCRON_SETT_FOR_RSS"  help='DIRCRON_SETT_FOR_RSS' menu="hide" label="" description="" />	
+		<field name="dirc_rss_cache" type="dircboolean" class="btn-group" default="1" menu="hide" label="DIRCRON_RSS_CACHE" description="" />
+		<field name="dirc_rss_cache_time" type="text" default="3600" menu="hide" size="6" label="DIRCRON_RSS_CTIME" description=""/>
+		<field name="dirc_rss_count" type="text" default="5" menu="hide" size="6" label="DIRCRON_RSS_LIMIT" description=""/>
+		<field name="dirc_rss_live_bookmarks" type="dircboolean" class="btn-group" default="1" menu="hide" label="DIRCRON_RSS_LIVE_BOOKMARKS" description="DIRCRON_RSS_LIVE_BOOKMARKS_TIP" />
+                <field name="dirc_rss_modid" type="text" default="" label="DIRCRON_RSS_MODID" description="DIRCRON_RSS_MODID_TIP" />
+		<field name="dirc_rss_title" type="text" default='DirectCron RSS Feed for Joomla'  menu="hide" size="50" label="DIRCRON_RSS_TITLE" description=""/>
+		<field name="dirc_rss_description" type="textarea" default="Powered by DirectCron!" menu="hide" rows="5" cols="40" label="DIRCRON_RSS_DESCRIPTION" description=""/>
+		<field name="dirc_rss_limit_text" type="dircboolean" class="btn-group" default="0" menu="hide" label="DIRCRON_RSS_LIMIT_TEXT_LENGTH" description="" />
+                <field name="dirc_rss_text_length" type="text" default="20" menu="hide" size="3" label="DIRCRON_RSS_TEXT_LIMIT" description=""/>
+		<field name="dirc_rss_logo" type="text" default="" menu="hide" size="60" label="DIRCRON_RSS_LOGO" description=""/>
+	</fieldset>
+	<fieldset name="DIRCRON_COMMENTS_SETTINGS">
+            <field name="showcommentsitem" type="list" default="1" menu="hide" label="DIRCRON_SHOW_ITEM_COMMENTS" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="showitemcommentform" type="list" default="1" menu="hide" label="DIRCRON_SHOW_ITEM_COMMENT_FORM" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="directcron_commenteditor" type="list" default="2000" menu="hide" size="6" label="DIRCRON_COMMENTEDITOR" description=""/>
+             <field name="showcommentscatg" type="list" default="0" menu="hide" label="DIRCRON_SHOW_CATG_COMMENTS" description="DIRCRON_SHOW_CATG_COMMENTS_DEFAULT">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="showcatgcommentform" type="list" default="0" menu="hide" label="DIRCRON_SHOW_CATG_COMMENT_FORM" description="DIRCRON_SHOW_CATG_COMMENTS_DEFAULT">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="removecommenttags" type="list" default="0" menu="hide" label="DIRCRON_COMMENT_TAGS" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+            <field name="commentlink" type="list" default="1" menu="hide" label="DIRCRON_COMMENT_LINK" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="showcommentimage" type="list" default="1" menu="hide" label="DIRCRON_SHOW_COMMENT_IMAGE" description="DIRCRON_SHOW_IMAGE">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+		</field>
+             <field name="showcommentvideo" type="list" default="1" menu="hide" label="DIRCRON_SHOW_COMMENT_VIDEO_BOX" description="DIRCRON_SHOW_VIDEO_BOX">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+		</field>
+              <field name="commentreCAPTCHA" type="radio" default="0" label="DIRCRON_COMMENT_RECAPTCHA" description="DIRCRON_COMMENT_RECAPTCHA_DESC"><option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+                
+ </fieldset>
+ <fieldset name="DIRCRON_COMMENTS_SETTINGS">
+     
+            <field name="showcommentsitem" type="list" default="1" menu="hide" label="DIRCRON_SHOW_ITEM_COMMENTS" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="showitemcommentform" type="list" default="1" menu="hide" label="DIRCRON_SHOW_ITEM_COMMENT_FORM" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="directcron_commenteditor" type="text" default="2000" menu="hide" size="6" label="DIRCRON_COMMENTEDITOR" description=""/>
+             <field name="showcommentscatg" type="list" default="0" menu="hide" label="DIRCRON_SHOW_CATG_COMMENTS" description="DIRCRON_SHOW_CATG_COMMENTS_DEFAULT">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="showcatgcommentform" type="list" default="0" menu="hide" label="DIRCRON_SHOW_CATG_COMMENT_FORM" description="DIRCRON_SHOW_CATG_COMMENTS_DEFAULT">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="removecommenttags" type="list" default="0" menu="hide" label="DIRCRON_COMMENT_TAGS" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+            <field name="commentlink" type="list" default="1" menu="hide" label="DIRCRON_COMMENT_LINK" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="showcommentimage" type="list" default="1" menu="hide" label="DIRCRON_SHOW_COMMENT_IMAGE" description="DIRCRON_SHOW_IMAGE">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+		</field>
+             <field name="showcommentvideo" type="list" default="1" menu="hide" label="DIRCRON_SHOW_COMMENT_VIDEO_BOX" description="DIRCRON_SHOW_VIDEO_BOX">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+		</field>
+ </fieldset>
+
+	  <fieldset name="DIRCRON_FORM_SETTINGS">
+            <field name="showitemform" type="list" default="1" menu="hide" label="DIRCRON_SHOW_FORM" description="DIRCRON_SHOW_FORM_SEE">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="itemformlogin" type="list" default="1" menu="hide" label="DIRCRON_ITEM_FORMLOGIN" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="directcron_itemeditor" type="text" default="2000" menu="hide" size="6" label="DIRCRON_ITEMEDITOR" description=""/>
+             <field name="publishuseritem" type="list" default="0" menu="hide" label="DIRCRON_PUBLISH_USERITEM" description="DIRCRON_PUBLISH_USERITEM_EXP">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+             <field name="useritemcatcha" type="list" default="0" menu="hide" label="DIRCRON_USERITEM_CAPTCHA" description="DIRCRON_USERITEM_CAPTCHA_EXP">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+	     </field>
+         
+ </fieldset>
+
+ 
+
+ 
+
+
+</config>

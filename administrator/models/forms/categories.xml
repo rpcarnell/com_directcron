@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>DIRCRON_CATEGORY_EDIT_FORM</name>
+        <params group="item-view-options-listings" addpath="/administrator/components/com_directcron/elements">
+            <param name="showCatgTitle" type="radio" default="1" label="DIRC_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			 <param name="showSubCatgTitleLinked" type="radio" default="1" label="SUBCATG_DIRC_TITLE_LINK" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			 <param name="catAuthor" type="radio" default="1" label="DIRC_AUTHOR" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+                        <param name="linkAuthor" type="radio" default="0" label="DIRC_AUTHORLINK" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+		 </param>
+			 
+			<param name="catImage" type="radio" default="1" label="DIRC_IMAGE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+                        <param name="catimagesize" type="list" default="thumbnail" label="DIRC_IMAGE_SIZE_FOR_CAT" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+			 </param>
+			<param name="catIntroText" type="radio" default="1" label="DIRC_INTROTEXT" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			<param name="catIntroTextWordLimit" type="text" default="" size="4" label="DIRC_INTROTEXT_WORD_LIMIT" description="DIRC_IF_THIS_OPTION_IS_ENABLED_ALL_HTML_TAGS_IN_THE_INTROTEXT_WILL_BE_CLEANED_UP_TO_MAKE_SURE_THE_SITE_MARKUP_WILL_NOT_BREAK"/>
+			 
+			<param name="categoryHits" type="radio" default="0" label="DIRCATEGORY_HITS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+		    
+		 
+			<param name="catItemDateModified" type="radio" default="0" label="DIRC_ITEM_MODIFIED_DATE_AND_TIME" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			<param name="catItemReadMore" type="radio" default="1" label="DIRC_READ_MORE_LINK" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			 
+			 
+        </params>
+        <params group="subcatg-item-layout" addpath="/administrator/components/com_directcron/elements">
+            <param name="showSubCatgTitle" type="radio" default="1" label="SUBCATG_DIRC_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			 
+			 <param name="SubcatAuthor" type="radio" default="1" label="SUBCATG_DIRC_AUTHOR" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+                        <param name="SublinkAuthor" type="radio" default="0" label="SUBCATG_DIRC_AUTHORLINK" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+		 </param>
+			 
+			<param name="SubcatImage" type="radio" default="1" label="SUBCATG_DIRC_IMAGE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+                        <param name="Subcatimagesize" type="list" default="thumbnail" label="vDIRC_IMAGE_SIZE_FOR_CAT" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+			 </param>
+			<param name="SubcatIntroText" type="radio" default="1" label="SUBCATG_DIRC_INTROTEXT" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			<param name="SubcatIntroTextWordLimit" type="text" default="" size="4" label="SUBCATG_DIRC_INTROTEXT_WORD_LIMIT" description="SUBCATG_DIRC_IF_THIS_OPTION_IS_ENABLED_ALL_HTML_TAGS_IN_THE_INTROTEXT_WILL_BE_CLEANED_UP_TO_MAKE_SURE_THE_SITE_MARKUP_WILL_NOT_BREAK"/>
+			 
+			<param name="SubcategoryHits" type="radio" default="0" label="SUBCATG_DIRCATEGORY_HITS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+		    
+		 
+			<param name="SubcatItemDateModified" type="radio" default="0" label="SUBCATG_DIRC_ITEM_MODIFIED_DATE_AND_TIME" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+			<param name="SubcatItemReadMore" type="radio" default="1" label="SUBCATG_DIRC_READ_MORE_LINK" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</param>
+	 </params>
+        <params group="category-item-layout" addpath="/administrator/components/com_directcron/elements">
+		<param name="" type="header" default="DIRC_LAYOUT_TEMPLATE" label="" description=""/>
+		<param name="" type="header" default="DIRC_LAYOUT_GRID" label="" description=""/>
+		<param name="num_leading_items" type="text" size="4" default="2" label="DIRC_LEADING_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_LEADING"/>
+		<param name="num_leading_columns" type="text" size="4" default="1" label="DIRC_COLUMNS_FOR_LEADING" description=""/>
+		<param name="leadingImgSize" type="list" default="Large" label="DIRC_IMAGE_SIZE_FOR_LEADING_ITEMS" description="DIRC_YOU_CAN_OVERRIDE_THE_GLOBAL_DIMENSIONS_FOR_EACH_SIZE_BY_ADJUSTING_THE_RELATED_SETTING_IN_THE_ITEM_IMAGE_OPTIONS_PANE_BELOW">
+			<option value="XSmall">DIRC_XSMALL</option>
+			<option value="Small">DIRC_SMALL</option>
+			<option value="Medium">DIRC_MEDIUM</option>
+			<option value="Large">DIRC_LARGE</option>
+			<option value="XLarge">DIRC_XLARGE</option>
+			<option value="none">DIRC_NO_IMAGE</option>
+		</param>
+                <param name="itemimagesize" type="list" default="thumbnail" label="DIRC_IMAGE_SIZE_FOR_ITEM" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+			 <option value="none">DIRC_NO_IMAGE</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description=""/>
+		<param name="num_primary_items" type="text" size="4" default="4" label="DIRC_PRIMARY_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_PRIMARY"/>
+                <param name="shorten_description" type="text" size="4" default="50" label="DIRC_SHORTEN_ITEMPARAGRPH" description="DIRECTCRON"/>
+                <param name="moreend_description" type="list" default="0" label="DIRC_MORE_ITEMPARAGRPH" description="DIRECTCRON">
+                    <option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+                </param>
+		<param name="num_primary_columns" type="text" size="4" default="2" label="DIRC_COLUMNS_FOR_PRIMARY" description=""/>
+		
+		<param name="@spacer" type="spacer" default="" label="" description=""/>
+		<param name="num_secondary_items" type="text" size="4" default="4" label="DIRC_SECONDARY_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_SECONDARY"/>
+		<param name="num_secondary_columns" type="text" size="4" default="1" label="DIRC_COLUMNS_FOR_SECONDARY" description=""/>
+		<param name="secondaryImgSize" type="list" default="Small" label="DIRC_IMAGE_SIZE_FOR_SECONDARY_ITEMS" description="DIRC_YOU_CAN_OVERRIDE_THE_GLOBAL_DIMENSIONS_FOR_EACH_SIZE_BY_ADJUSTING_THE_RELATED_SETTING_IN_THE_ITEM_IMAGE_OPTIONS_PANE_BELOW">
+			<option value="XSmall">DIRC_XSMALL</option>
+			<option value="Small">DIRC_SMALL</option>
+			<option value="Medium">DIRC_MEDIUM</option>
+			<option value="Large">DIRC_LARGE</option>
+			<option value="XLarge">DIRC_XLARGE</option>
+			<option value="none">DIRC_NO_IMAGE</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description=""/>
+		<param name="num_links" type="text" size="4" default="4" label="DIRC_LINKS_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_LINKS"/>
+		<param name="num_links_columns" type="text" size="4" default="1" label="DIRC_COLUMNS_FOR_LINKS" description=""/>
+		<param name="linksImgSize" type="list" default="XSmall" label="DIRC_IMAGE_SIZE_FOR_LINK_ITEMS" description="DIRC_YOU_CAN_OVERRIDE_THE_GLOBAL_DIMENSIONS_FOR_EACH_SIZE_BY_ADJUSTING_THE_RELATED_SETTING_IN_THE_ITEM_IMAGE_OPTIONS_PANE_BELOW">
+			<option value="XSmall">DIRC_XSMALL</option>
+			<option value="Small">DIRC_SMALL</option>
+			<option value="Medium">DIRC_MEDIUM</option>
+			<option value="Large">DIRC_LARGE</option>
+			<option value="XLarge">DIRC_XLARGE</option>
+			<option value="none">DIRC_NO_IMAGE</option>
+		</param>
+		<param name="" type="header" default="DIRC_OTHER_LAYOUT_OPTIONS" label="" description=""/>
+		<param name="catCatalogMode" type="list" default="0" label="DIRC_CATALOG_MODE" description="DIRC_IF_YOU_SELECT_YES_THEN_ONLY_THE_ITEMS_DIRECTLY_BELONGING_TO_THIS_CATEGORY_WILL_BE_RETRIEVED_IF_YOU_SELECT_NO_THEN_ITEMS_FROM_ALL_SUBCATEGORIES_WILL_BE_RETRIEVED_SETTING_THIS_OPTION_TO_NO_IS_IDEAL_FOR_NEWSPORTALMAGAZINEBLOG_LAYOUTS">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+		</param>
+		<param name="catFeaturedItems" type="list" default="1" label="DIRC_FEATURED_ITEMS" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+			<option value="2">DIRC_SHOW_ONLY_FEATURED_ITEMS</option>
+		</param>
+		<param name="catOrdering" type="list" default="" label="DIRC_ITEM_ORDERING" description="">
+			<option value="">DIRC_DEFAULT</option>
+			<option value="date">DIRC_OLDEST_FIRST</option>
+			<option value="rdate">DIRC_MOST_RECENT_FIRST</option>
+			<option value="publishUp">DIRC_RECENTLY_PUBLISHED</option>
+			<option value="alpha">DIRC_TITLE_ALPHABETICAL</option>
+			<option value="ralpha">DIRC_TITLE_REVERSEALPHABETICAL</option>
+			<option value="order">DIRC_ORDERING</option>
+			<option value="rorder">DIRC_ORDERING_REVERSE</option>
+			<option value="featured">DIRC_FEATURED_FIRST</option>
+			<option value="hits">DIRC_MOST_POPULAR</option>
+			<option value="best">DIRC_HIGHEST_RATED</option>
+			<option value="modified">DIRC_LATEST_MODIFIED</option>
+			<option value="rand">DIRC_RANDOM_ORDERING</option>
+		</param>
+		<param name="catPagination" type="list" default="2" label="DIRC_PAGINATION" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+			<option value="2">DIRC_AUTO</option>
+		</param>
+		<param name="catPaginationResults" type="radio" default="1" label="DIRC_PAGINATION_RESULTS" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+	</params>
+	<params group="category-view-options" addpath="/administrator/components/com_directcron/elements">
+		<param name="catTitle" type="radio" default="1" label="DIRC_TITLE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="catTitleItemCounter" type="radio" default="1" label="DIRC_ITEM_COUNTER_NEXT_TO_TITLE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="catDescription" type="radio" default="1" label="DIRC_DESCRIPTION" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="catImage" type="radio" default="1" label="DIdRC_IMAGE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+                <param name="catimagesize" type="list" default="thumbnail" label="DIRC_IMAGE_SIZE_FOR_CAT" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+                </param>
+		<param name="catFeedLink" type="radio" default="1" label="DIRC_RSS_FEED_LINK" description="">
+			<option value="0">DIRC_DISABLE</option>
+			<option value="1">DIRC_ENABLE</option>
+		</param>
+		<param name="catFeedIcon" type="radio" default="1" label="DIRC_RSS_FEED_ICON" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="" type="header" default="DIRC_SUBCATEGORY_HANDLING" label="" description=""/>
+		<param name="subCategories" type="radio" default="1" label="DIRC_SUBCATEGORY_BLOCKS" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="subCatColumns" type="text" default="2" size="4" label="DIRC_COLUMNS" description=""/>
+		<param name="subCatOrdering" type="list" default="" label="DIRC_SUBCATEGORY_ORDERING" description="">
+			<option value="">DIRC_DEFAULT_BY_ID_ASCENDING</option>
+			<option value="reversedefault">DIRC_REVERSE_DEFAULT_BY_ID_DESCENDING</option>
+			<option value="alpha">DIRC_TITLE_ALPHABETICAL</option>
+			<option value="ralpha">DIRC_TITLE_REVERSEALPHABETICAL</option>
+			<option value="order">DIRC_ORDERING</option>
+		</param>
+		<param name="subCatTitle" type="radio" default="1" label="DIRC_SUBCATEGORY_TITLE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="subCatTitleItemCounter" type="radio" default="1" label="DIRC_ITEM_COUNTER_NEXT_TO_SUBCATEGORY_TITLE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="subCatDescription" type="radio" default="1" label="DIRC_SUBCATEGORY_DESCRIPTION" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		 
+	</params>
+	 
+	 
+	<params group="item-view-options" addpath="/administrator/components/com_directcron/elements">
+		<param name="itemDateCreated" type="radio" default="1" label="DIRC_ITEM_CREATED_DATE_AND_TIME" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemTitle" type="radio" default="1" label="DIRC_TITLE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		 <param name="itemAuthor" type="radio" default="1" label="DIRC_AUTHOR" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemFontResizer" type="radio" default="1" label="DIRC_FONT_RESIZER" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemPrintButton" type="radio" default="1" label="DIRC_PRINT_BUTTON" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemEmailButton" type="radio" default="1" label="DIRC_EMAIL_BUTTON" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemSocialButton" type="radio" default="1" label="DIRC_SOCIAL_BUTTON_LIKE_SHARETHIS_ADDTHIS_ETC" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemVideoAnchor" type="radio" default="1" label="DIRC_ANCHOR_LINK_TO_VIDEO" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemImageGalleryAnchor" type="radio" default="1" label="DIRC_ANCHOR_LINK_TO_IMAGE_GALLERY" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemCommentsAnchor" type="radio" default="1" label="DIRC_ANCHOR_LINK_WITH_COMMENTS_COUNTER_TO_COMMENT_FORM" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		 
+		<param name="itemImage" type="radio" default="1" label="DIRC_IMAGE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemImgSize" type="list" default="Large" label="DIRC_IMAGE_SIZE" description="">
+			<option value="XSmall">DIRC_XSMALL</option>
+			<option value="Small">DIRC_SMALL</option>
+			<option value="Medium">DIRC_MEDIUM</option>
+			<option value="Large">DIRC_LARGE</option>
+			<option value="XLarge">DIRC_XLARGE</option>
+		</param>
+		<param name="itemImageMainCaption" type="radio" default="1" label="DIRC_IMAGE_CAPTION" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemImageMainCredits" type="radio" default="1" label="DIRC_IMAGE_CREDITS" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		
+		<param name="itemFullText" type="radio" default="1" label="DIRC_FULLTEXT" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		 
+		<param name="itemDateModified" type="radio" default="1" label="DIRC_ITEM_MODIFIED_DATE_AND_TIME" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemHits" type="radio" default="1" label="DIRC_HITS_PAGE_VIEWS" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		 <param name="itemNavigation" type="radio" default="1" label="DIRC_ITEM_NAVIGATION" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemComments" type="radio" default="1" label="DIRC_COMMENTS" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="" type="header" default="DIRC_SOCIAL_SHARING" label="" description=""/>
+		<param name="itemTwitterButton" type="radio" default="1" label="DIRC_TWITTER_SHARE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemFacebookButton" type="radio" default="1" label="DIRC_FACEBOOK_SHARE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemGooglePlusOneButton" type="radio" default="1" label="DIRC_GOOGLEPLUSONE_SHARE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="" type="header" default="DIRC_AUTHOR_OPTIONS" label="" description=""/>
+		<param name="itemAuthorBlock" type="radio" default="1" label="DIRC_DISPLAY_EXTENDED_AUTHOR_INFO" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemAuthorImage" type="radio" default="1" label="DIRC_AUTHOR_IMAGE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemAuthorDescription" type="radio" default="1" label="DIRC_AUTHOR_DESCRIPTION" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemAuthorURL" type="radio" default="1" label="DIRC_AUTHOR_URL" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemAuthorEmail" type="radio" default="0" label="DIRC_AUTHOR_EMAIL" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemAuthorLatest" type="radio" default="1" label="DIRC_LATEST_ITEMS_FROM_AUTHOR" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemAuthorLatestLimit" type="text" default="5" size="4" label="DIRC_LIMIT_FOR_LATEST_ITEMS_FROM_AUTHOR" description=""/>
+		<param name="" type="header" default="DIRC_RELATED_ITEMS" label="" description=""/>
+		<param name="itemRelated" type="radio" default="1" label="DIRC_RELATED_ITEMS_BY_TAG" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedLimit" type="text" default="5" size="4" label="DIRC_RELATED_ITEMS_LIMIT" description=""/>
+		<param name="itemRelatedTitle" type="radio" default="1" label="DIRC_RELATED_ITEMS_TITLE" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedCategory" type="radio" default="0" label="DIRC_RELATED_ITEMS_CATEGORY" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedImageSize" type="list" default="0" label="DIRC_RELATED_ITEMS_IMAGE" description="">
+			<option value="0">DIRC_NONE_SELECTED</option>
+			<option value="XSmall">DIRC_XSMALL</option>
+			<option value="Small">DIRC_SMALL</option>
+			<option value="Medium">DIRC_MEDIUM</option>
+			<option value="Large">DIRC_LARGE</option>
+			<option value="XLarge">DIRC_XLARGE</option>
+		</param>
+		<param name="itemRelatedIntrotext" type="radio" default="0" label="DIRC_RELATED_ITEMS_INTROTEXT" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedFulltext" type="radio" default="0" label="DIRC_RELATED_ITEMS_FULLTEXT" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedAuthor" type="radio" default="0" label="DIRC_RELATED_ITEMS_AUTHOR" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedMedia" type="radio" default="0" label="DIRC_RELATED_ITEMS_MEDIA" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="itemRelatedImageGallery" type="radio" default="0" label="DIRC_RELATED_ITEMS_IMAGE_GALLERY" description="">
+			<option value="0">DIRC_HIDE</option>
+			<option value="1">DIRC_SHOW</option>
+		</param>
+		<param name="" type="header" default="DIRC_ADVANCED" label="" description=""/>
+		<param name="itemK2Plugins" type="radio" default="1" label="DIRC_ENABLE_DIRC_PLUGINS" description="">
+			<option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+		</param>
+	</params>
+	 
+	<fields name="params">
+		<fieldset name="category-item-layout" addfieldpath="/administrator/components/com_directcron/elements">
+			<param name="" type="header" default="DIRC_LAYOUT_TEMPLATE" label="" description=""/>
+			<field name="" type="header" default="DIRC_LAYOUT_GRID" label="" description=""/>
+			<field name="num_leading_items" type="text" size="4" default="2" label="DIRC_LEADING_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_LEADING"/>
+			<field name="num_leading_columns" type="text" size="4" default="1" label="DIRC_COLUMNS_FOdd_LEADING" description=""/>
+			<field name="itemimagesize" type="list" default="thumbnail" label="DIRC_IMAGE_SIZE_FOR_ITEM" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+			 <option value="none">DIRC_NO_IMAGE</option>
+		        </field>
+                      
+                
+			<field name="@spacer" type="spacer" default="" label="" description=""/>
+                        <field name="shorten_description" type="text" size="4" default="50" label="DIRC_SHORTEN_ITEMPARAGRPH" description="DIRECTCRON"/>
+                        <field name="moreend_description" type="list" default="0" label="DIRC_MORE_ITEMPARAGRPH" description="DIRECTCRON">
+                        <option value="0">DIRC_NO</option>
+			<option value="1">DIRC_YES</option>
+                        </field>
+			<field name="num_primary_items" type="text" size="4" default="4" label="DIRC_PRIMARY_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_PRIMARY"/>
+			<field name="num_primary_columns" type="text" size="4" default="2" label="DIRC_COLUMNS_FOR_PRIMARY" description=""/>
+			<field name="primaryImgSize" type="list" default="Medium" label="DIRC_IMAGE_SIZE_FOR_PRIMARY_ITEMS" description="DIRC_YOU_CAN_OVERRIDE_THE_GLOBAL_DIMENSIONS_FOR_EACH_SIZE_BY_ADJUSTING_THE_RELATED_SETTING_IN_THE_ITEM_IMAGE_OPTIONS_PANE_BELOW">
+				<option value="XSmall">DIRC_XSMALL</option>
+				<option value="Small">DIRC_SMALL</option>
+				<option value="Medium">DIRC_MEDIUM</option>
+				<option value="Large">DIRC_LARGE</option>
+				<option value="XLarge">DIRC_XLARGE</option>
+				<option value="none">DIRC_NO_IMAGE</option>
+			</field>
+			<field name="@spacer" type="spacer" default="" label="" description=""/>
+			<field name="num_secondary_items" type="text" size="4" default="4" label="DIRC_SECONDARY_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_SECONDARY"/>
+			<field name="num_secondary_columns" type="text" size="4" default="1" label="DIRC_COLUMNS_FOR_SECONDARY" description=""/>
+			<field name="secondaryImgSize" type="list" default="Small" label="DIRC_IMAGE_SIZE_FOR_SECONDARY_ITEMS" description="DIRC_YOU_CAN_OVERRIDE_THE_GLOBAL_DIMENSIONS_FOR_EACH_SIZE_BY_ADJUSTING_THE_RELATED_SETTING_IN_THE_ITEM_IMAGE_OPTIONS_PANE_BELOW">
+				<option value="XSmall">DIRC_XSMALL</option>
+				<option value="Small">DIRC_SMALL</option>
+				<option value="Medium">DIRC_MEDIUM</option>
+				<option value="Large">DIRC_LARGE</option>
+				<option value="XLarge">DIRC_XLARGE</option>
+				<option value="none">DIRC_NO_IMAGE</option>
+			</field>
+			<field name="@spacer" type="spacer" default="" label="" description=""/>
+			<field name="num_links" type="text" size="4" default="4" label="DIRC_LINKS_COUNT" description="DIRC_NUMBER_OF_ITEMS_TO_DISPLAY_AS_LINKS"/>
+			<field name="num_links_columns" type="text" size="4" default="1" label="DIRC_COLUMNS_FOR_LINKS" description=""/>
+			<field name="linksImgSize" type="list" default="XSmall" label="DIRC_IMAGE_SIZE_FOR_LINK_ITEMS" description="DIRC_YOU_CAN_OVERRIDE_THE_GLOBAL_DIMENSIONS_FOR_EACH_SIZE_BY_ADJUSTING_THE_RELATED_SETTING_IN_THE_ITEM_IMAGE_OPTIONS_PANE_BELOW">
+				<option value="XSmall">DIRC_XSMALL</option>
+				<option value="Small">DIRC_SMALL</option>
+				<option value="Medium">DIRC_MEDIUM</option>
+				<option value="Large">DIRC_LARGE</option>
+				<option value="XLarge">DIRC_XLARGE</option>
+				<option value="none">DIRC_NO_IMAGE</option>
+			</field>
+			<field name="" type="header" default="DIRC_OTHER_LAYOUT_OPTIONS" label="" description=""/>
+			<field name="catCatalogMode" type="list" default="0" label="DIRC_CATALOG_MODE" description="DIRC_IF_YOU_SELECT_YES_THEN_ONLY_THE_ITEMS_DIRECTLY_BELONGING_TO_THIS_CATEGORY_WILL_BE_RETRIEVED_IF_YOU_SELECT_NO_THEN_ITEMS_FROM_ALL_SUBCATEGORIES_WILL_BE_RETRIEVED_SETTING_THIS_OPTION_TO_NO_IS_IDEAL_FOR_NEWSPORTALMAGAZINEBLOG_LAYOUTS">
+				<option value="0">DIRC_NO</option>
+				<option value="1">DIRC_YES</option>
+			</field>
+			<field name="catFeaturedItems" type="list" default="1" label="DIRC_FEATURED_ITEMS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+				<option value="2">DIRC_SHOW_ONLY_FEATURED_ITEMS</option>
+			</field>
+			<field name="catOrdering" type="list" default="" label="DIRC_ITEM_ORDERING" description="">
+				<option value="">DIRC_DEFAULT</option>
+				<option value="date">DIRC_OLDEST_FIRST</option>
+				<option value="rdate">DIRC_MOST_RECENT_FIRST</option>
+				<option value="publishUp">DIRC_RECENTLY_PUBLISHED</option>
+				<option value="alpha">DIRC_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">DIRC_TITLE_REVERSEALPHABETICAL</option>
+				<option value="order">DIRC_ORDERING</option>
+				<option value="rorder">DIRC_ORDERING_REVERSE</option>
+				<option value="featured">DIRC_FEATURED_FIRST</option>
+				<option value="hits">DIRC_MOST_POPULAR</option>
+				<option value="best">DIRC_HIGHEST_RATED</option>
+				<option value="modified">DIRC_LATEST_MODIFIED</option>
+				<option value="rand">DIRC_RANDOM_ORDERING</option>
+			</field>
+			<field name="catPagination" type="list" default="2" label="DIRC_PAGINATION" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+				<option value="2">DIRC_AUTO</option>
+			</field>
+			<field name="catPaginationResults" type="radio" default="1" label="DIRC_PAGINATION_RESULTS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+		</fieldset>
+                 <fieldset name="subcatg-item-layout" addfieldpath="/administrator/components/com_directcron/elements">
+			<field name="showSubCatgTitle" type="radio" default="1" label="SUBCATG_DIRC_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			 <field name="showSubCatgTitleLinked" type="radio" default="1" label="SUBCATG_DIRC_TITLE_LINK" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			 <field name="subcatAuthor" type="radio" default="1" label="SUBCATG_DIRC_AUTHOR" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+                        <field name="sublinkAuthor" type="radio" default="0" label="SUBCATG_DIRC_AUTHORLINK" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+		 </field>
+			 
+			<field name="subcatImage" type="radio" default="1" label="SUBCATG_DIRC_IMAGE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+                        <field name="subcatimagesize" type="list" default="thumbnail" label="SUBCATG_DIRC_IMAGE_SIZE_FOR_CAT" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+			 </field>
+			<field name="subcatIntroText" type="radio" default="1" label="SUBCATG_DIRC_INTROTEXT" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="subcatIntroTextWordLimit" type="text" default="" size="4" label="SUBCATG_DIRC_INTROTEXT_WORD_LIMIT" description="DIRC_IF_THIS_OPTION_IS_ENABLED_ALL_HTML_TAGS_IN_THE_INTROTEXT_WILL_BE_CLEANED_UP_TO_MAKE_SURE_THE_SITE_MARKUP_WILL_NOT_BREAK"/>
+			 
+			<field name="subcategoryHits" type="radio" default="0" label="SUBCATG_DIRCATEGORY_HITS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+		    
+		 
+			<field name="subcatItemDateModified" type="radio" default="0" label="SUBCATG_DIRC_ITEM_MODIFIED_DATE_AND_TIME" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="subcatItemReadMore" type="radio" default="1" label="SUBCATG_DIRC_READ_MORE_LINK" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+		</fieldset>
+	<fieldset name="category-view-options" addfieldpath="/administrator/components/com_directcron/elements">
+			<field name="catTitle" type="radio" default="1" label="DIRC_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="catTitleItemCounter" type="radio" default="1" label="DIRC_ITEM_COUNTER_NEXT_TO_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="catDescription" type="radio" default="1" label="DIRC_DESCRIPTION" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			
+			<field name="catFeedLink" type="radio" default="1" label="DIRC_RSS_FEED_LINK" description="">
+				<option value="0">DIRC_DISABLE</option>
+				<option value="1">DIRC_ENABLE</option>
+			</field>
+			<field name="catFeedIcon" type="radio" default="1" label="DIRC_RSS_FEED_ICON" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="" type="header" default="DIRC_SUBCATEGORY_HANDLING" label="" description=""/>
+			<field name="subCategories" type="radio" default="1" label="DIRC_SUBCATEGORY_BLOCKS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="subCatColumns" type="text" default="2" size="4" label="DIRC_COLUMNS" description=""/>
+			<field name="subCatOrdering" type="list" default="" label="DIRC_SUBCATEGORY_ORDERING" description="">
+				<option value="">DIRC_DEFAULT_BY_ID_ASCENDING</option>
+				<option value="reversedefault">DIRC_REVERSE_DEFAULT_BY_ID_DESCENDING</option>
+				<option value="alpha">DIRC_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">DIRC_TITLE_REVERSEALPHABETICAL</option>
+				<option value="order">DIRC_ORDERING</option>
+			</field>
+			<field name="subCatTitle" type="radio" default="1" label="DIRC_SUBCATEGORY_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="subCatTitleItemCounter" type="radio" default="1" label="DIRC_ITEM_COUNTER_NEXT_TO_SUBCATEGORY_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="subCatDescription" type="radio" default="1" label="DIRC_SUBCATEGORY_DESCRIPTION" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			 
+		</fieldset>
+		<fieldset name="item-image-options" addfieldpath="/administrator/components/com_directcron/elements">
+			<field name="itemImageXS" type="text" default="" label="DIRC_XSMALL_IMAGE_WIDTH_IN_PX" size="4" description="DIRC_IF_NO_VALUE_IS_ENTERED_THE_RELATED_SETTING_FROM_THE_COMPONENTS_GLOBAL_PARAMETERS_WILL_BE_RETRIEVED"/>
+			<field name="itemImageS" type="text" default="" label="DIRC_SMALL_IMAGE_WIDTH_IN_PX" size="4" description="DIRC_IF_NO_VALUE_IS_ENTERED_THE_RELATED_SETTING_FROM_THE_COMPONENTS_GLOBAL_PARAMETERS_WILL_BE_RETRIEVED"/>
+			<field name="itemImageM" type="text" default="" label="DIRC_MEDIUM_IMAGE_WIDTH_IN_PX" size="4" description="DIRC_IF_NO_VALUE_IS_ENTERED_THE_RELATED_SETTING_FROM_THE_COMPONENTS_GLOBAL_PARAMETERS_WILL_BE_RETRIEVED"/>
+			<field name="itemImageL" type="text" default="" label="DIRC_LARGE_IMAGE_WIDTH_IN_PX" size="4" description="DIRC_IF_NO_VALUE_IS_ENTERED_THE_RELATED_SETTING_FROM_THE_COMPONENTS_GLOBAL_PARAMETERS_WILL_BE_RETRIEVED"/>
+			<field name="itemImageXL" type="text" default="" label="DIRC_XLARGE_IMAGE_WIDTH_IN_PX" size="4" description="DIRC_IF_NO_VALUE_IS_ENTERED_THE_RELATED_SETTING_FROM_THE_COMPONENTS_GLOBAL_PARAMETERS_WILL_BE_RETRIEVED"/>
+		</fieldset>
+		<fieldset name="item-view-options-listings" addfieldpath="/administrator/components/com_directcron/elements">
+			<field name="showCatgTitle" type="radio" default="1" label="DIRC_TITLE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			 
+			 <field name="catAuthor" type="radio" default="1" label="DIRC_AUTHOR" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+                        <field name="linkAuthor" type="radio" default="0" label="DIRC_AUTHORLINK" description="directcron">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+		 </field>
+			 
+			<field name="catImage" type="radio" default="1" label="DIRC_IMAGE" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+                        <field name="catimagesize" type="list" default="thumbnail" label="DIRC_IMAGE_SIZE_FOR_CAT" description="Directcron">
+			<option value="thumbnail">DIRC_THUMBNAIL</option>
+			<option value="regular">DIRC_REGULARIMG</option>
+			 </field>
+			<field name="catIntroText" type="radio" default="1" label="DIRC_INTROTEXT" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="catIntroTextWordLimit" type="text" default="" size="4" label="DIRC_INTROTEXT_WORD_LIMIT" description="DIRC_IF_THIS_OPTION_IS_ENABLED_ALL_HTML_TAGS_IN_THE_INTROTEXT_WILL_BE_CLEANED_UP_TO_MAKE_SURE_THE_SITE_MARKUP_WILL_NOT_BREAK"/>
+			 
+			<field name="categoryHits" type="radio" default="0" label="DIRCATEGORY_HITS" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+		    
+		 
+			<field name="catItemDateModified" type="radio" default="0" label="DIRC_ITEM_MODIFIED_DATE_AND_TIME" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+			<field name="catItemReadMore" type="radio" default="1" label="DIRC_READ_MORE_LINK" description="">
+				<option value="0">DIRC_HIDE</option>
+				<option value="1">DIRC_SHOW</option>
+			</field>
+		 </fieldset>
+	 </fields>
+</form>
